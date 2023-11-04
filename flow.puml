@@ -1,0 +1,55 @@
+@startuml flow
+start
+:User visits website;
+if (User is an existing User?) then (yes)
+  :User logs in;
+else (no)
+  :User creates an account;
+endif
+:User is redirected to products page;
+switch (What does the User want to do?)
+  case (check cart)
+    :User is redirected to cart;
+    if (User wants to checkout?) then (yes)
+      :User enters shipping and payment information;
+      :User confirms order;
+      :System processes payment and sends confirmation email;
+      :User receives confirmation email;
+    else (no)
+      :User continues shopping;
+    endif
+  case (check Dashboard)
+    :User is redirected to Dashboard;
+    if (User wants to check order status?) then (yes)
+      :User is redirected to order status page;
+    endif
+  case (check their products)
+    :User is redirected to their products page;
+'   CRUD operations
+    switch (What does the User want to do with their products?)
+    case (add a new product)
+      :User is redirected to add product page;
+      :User adds product;
+    case (check their products)
+      :User can already see their products;
+    case (edit a product)
+      :User is redirected to edit product page;
+      :User edits product;
+    case (delete a product)
+      :User is redirected to delete product page;
+      :User deletes product;
+    endswitch
+  case (check their profile)
+    :User is redirected to their profile page;
+    if (User wants to edit their profile?) then (yes)
+      :User is redirected to edit profile page;
+      :User edits profile;
+    endif
+  case (check their orders)
+    :User is redirected to their orders page;
+    if (User wants to check order status?) then (yes)
+      :User is redirected to order status page;
+    endif
+endswitch
+stop
+@enduml

@@ -1,0 +1,91 @@
+@startuml db
+
+enum Status {
+  PREPARING <<default>>
+  ..
+  ON_THE_WAY
+  DELIVERED
+}
+
+enum UserType {
+  CUSTOMER <<default>>
+  ..
+  SELLER
+  FARMER
+}
+
+enum ProductCategory {
+  FRUITS <<default>>
+  ..
+  VEGETABLES
+  DAIRY
+  MEAT
+  FISH
+  BAKERY
+  BEVERAGES
+  SNACKS
+  CANNED
+  FROZEN
+  CLEANING
+  OTHER
+}
+
+entity Orders {
+  * id: int <<generated>>
+  -- FK --
+  * productID: [string]
+  * userID: string
+  --
+  * totalAmount: int
+  * status: Status
+}
+
+entity Address {
+  * id: int <<generated>>
+  --
+  * line1: string
+  * city: string
+  * state: string
+  * zipCode: string
+}
+
+entity Users {
+  * id: string <<generated>>
+  --
+  * username: string
+  * email: string
+  * phone: string
+  * type: UserType
+  * address: Address
+}
+
+entity Products {
+  * id <<generated>>
+  -- FK --
+  * ownerID: string
+  --
+  * name: string
+  * description: string
+  * image: string
+  * price: int
+  * quantity: int
+  * category: ProductCategory
+  * isActive: bool
+}
+
+Users --> Orders : Places
+Orders --> Products : Contains
+Products --> Users : Owned by
+Orders --> Address : Delivered to
+
+Status --> Orders : Status
+UserType --> Users : UserType
+ProductCategory --> Products : Category
+
+@enduml
+
+' Type            Symbol
+' Zero or One     |o--
+' Exactly One     ||--
+' Zero or Many    }o--
+' One or Many     }|--
