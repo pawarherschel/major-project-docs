@@ -1,0 +1,36 @@
+@startuml usecase
+:farmer:
+:dealer:
+:customer:
+
+(login/register)
+(view produce)
+(buy produce)
+(sell produce)
+(view equipment)
+(buy equipment)
+(sell equipment)
+(create produce listing)
+(create equipment listing)
+(view order details)
+(view order dashboard)
+
+:farmer: -> (login/register)
+:farmer: -> (sell produce)
+:farmer: -> (view equipment)
+:farmer: -> (create produce listing)
+:farmer: -> (buy equipment)
+:farmer: -> (view order dashboard)
+
+:dealer: <- (login/register)
+:dealer: <- (sell equipment)
+:dealer: <- (create equipment listing)
+:dealer: <- (view order dashboard)
+
+:customer: --> (login/register)
+:customer: --> (view produce)
+:customer: --> (buy produce)
+:customer: --> (view order details)
+
+
+@enduml

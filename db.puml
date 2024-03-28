@@ -10,7 +10,7 @@ enum Status {
 enum UserType {
   CUSTOMER <<default>>
   ..
-  SELLER
+  DEALER
   FARMER
 }
 

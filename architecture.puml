@@ -1,0 +1,26 @@
+@startuml architecture diagram
+
+actor customer
+archimate #Technology "Phone" as pc <<technology-device>>
+
+customer --> pc: Login
+
+cloud server
+pc --> server: Request "Login credentials"
+
+database db
+server --> db: Query "Check user type and credentials"
+
+db --> server: Response
+
+actor farmer
+actor dealer
+
+server --> farmer: Response "Login successful"
+server --> dealer: Response "Login successful"
+
+archimate #Technology "Phone" as farmer_pc <<technology-device>>
+
+farmer --> farmer_pc: View "Dashboard"
+
+@enduml

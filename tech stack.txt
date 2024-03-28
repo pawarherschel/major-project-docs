@@ -1,0 +1,11 @@
+frontend
+    react
+    tailwind css
+    shadCN
+
+backend
+    cloudinary
+    twillio
+    mongoose
+    razorpay
+    jwt
