@@ -1,0 +1,24 @@
+<mxfile host="app.diagrams.net" modified="2024-03-27T14:52:16.502Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="mwwSVSuw05nh1r9AQG64" version="24.2.0" type="device">
+  <diagram name="Page-1" id="c2R_HJTXx0qI99lUliow">
+    <mxGraphModel dx="1098" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tvyFfB7hzxl0HRXoNPSE-1" value="MongoDB" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="360" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tvyFfB7hzxl0HRXoNPSE-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tvyFfB7hzxl0HRXoNPSE-3" target="tvyFfB7hzxl0HRXoNPSE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tvyFfB7hzxl0HRXoNPSE-5" value="Register" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tvyFfB7hzxl0HRXoNPSE-4">
+          <mxGeometry x="-0.3493" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tvyFfB7hzxl0HRXoNPSE-3" value="User" style="html=1;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="190" y="240" width="100" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
