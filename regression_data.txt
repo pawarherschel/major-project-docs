@@ -1,0 +1,167 @@
+Number of threads being used for testing: 15
+Total number of concurrent requests: 2001
+Sending requests to IP: 192.168.0.120:5500
+Time taken for logging in: 596.1829ms
+A burst of 2001 requests were sent over a time period of 31.8µs
+---------------- Results ----------------
+========================================
+Testing Route: Burst Hello World
+----------------------------------------
+Number of Iterations: 667, Number of Failed Iterations: 0 / 667 (0.0000% failure rate)
+----------------------------------------
+Average Response Time: 1.918747012s,
+Average Response Time without Outliers: 1.432467226s,
+----------------------------------------
+Minimum Time   : 272.7426ms,
+01st Percentile: 671.3407ms,
+05th Percentile: 732.6206ms,
+First Quartile : 1.24265655s,
+Median         : 1.6301188s,
+Third Quartile : 1.89566705s,
+95th Percentile: 4.3819164s,
+99th Percentile: 4.40167815s,
+Maximum Time   : 4.4325705s
+----------------------------------------
+Inter-quartile Range: 653.0105ms
+----------------------------------------
+Number of Outliers: 110
+Number of Outliers Below Median: 0
+Number of Outliers Above Median: 110
+----------------------------------------
+The data is Positively Skewed
+========================================
+
+========================================
+Testing Route: Burst Get Product by ID
+----------------------------------------
+Number of Iterations: 667, Number of Failed Iterations: 0 / 667 (0.0000% failure rate)
+----------------------------------------
+Average Response Time: 13.306083656s,
+Average Response Time without Outliers: 13.9669707s,
+----------------------------------------
+Minimum Time   : 848.495ms,
+01st Percentile: 1.7362648s,
+05th Percentile: 2.3489753s,
+First Quartile : 11.78795795s,
+Median         : 13.8295204s,
+Third Quartile : 15.73219125s,
+95th Percentile: 17.71357815s,
+99th Percentile: 17.9141916s,
+Maximum Time   : 18.5919758s
+----------------------------------------
+Inter-quartile Range: 3.9442333s
+----------------------------------------
+Number of Outliers: 36
+Number of Outliers Below Median: 36
+Number of Outliers Above Median: 0
+----------------------------------------
+The data is Negatively Skewed
+========================================
+
+========================================
+Testing Route: Burst Get All Items by Farmer
+----------------------------------------
+Number of Iterations: 667, Number of Failed Iterations: 0 / 667 (0.0000% failure rate)
+----------------------------------------
+Average Response Time: 12.809823779s,
+Average Response Time without Outliers: 13.968405279s,
+----------------------------------------
+Minimum Time   : 836.6551ms,
+01st Percentile: 852.6249ms,
+05th Percentile: 1.8096644s,
+First Quartile : 10.86031175s,
+Median         : 13.83297985s,
+Third Quartile : 16.73433645s,
+95th Percentile: 17.75333835s,
+99th Percentile: 17.9060483s,
+Maximum Time   : 18.5938437s
+----------------------------------------
+Inter-quartile Range: 5.8740247s
+----------------------------------------
+Number of Outliers: 63
+Number of Outliers Below Median: 63
+Number of Outliers Above Median: 0
+----------------------------------------
+The data is Negatively Skewed
+========================================
+
+========================================
+Testing Route: Separate Burst for Hello World
+----------------------------------------
+Number of Iterations: 20, Number of Failed Iterations: 0 / 20 (0.0000% failure rate)
+----------------------------------------
+Average Response Time: 24.746585ms,
+Average Response Time without Outliers: 24.746585ms,
+----------------------------------------
+Minimum Time   : 21.1543ms,
+01st Percentile: 21.16675ms,
+05th Percentile: 21.1792ms,
+First Quartile : 21.2238ms,
+Median         : 21.2969ms,
+Third Quartile : 27.3185ms,
+95th Percentile: 34.4563ms,
+99th Percentile: 34.4563ms,
+Maximum Time   : 34.4563ms
+----------------------------------------
+Inter-quartile Range: 6.0947ms
+----------------------------------------
+Number of Outliers: 0
+Number of Outliers Below Median: 0
+Number of Outliers Above Median: 0
+----------------------------------------
+The data is Positively Skewed
+========================================
+
+========================================
+Testing Route: Separate Burst for Get Product by ID
+----------------------------------------
+Number of Iterations: 20, Number of Failed Iterations: 0 / 20 (0.0000% failure rate)
+----------------------------------------
+Average Response Time: 331.340975ms,
+Average Response Time without Outliers: 332.805826ms,
+----------------------------------------
+Minimum Time   : 303.5088ms,
+01st Percentile: 304.87395ms,
+05th Percentile: 306.2391ms,
+First Quartile : 328.7809ms,
+Median         : 338.9726ms,
+Third Quartile : 344.0131ms,
+95th Percentile: 349.1879ms,
+99th Percentile: 349.1879ms,
+Maximum Time   : 349.1879ms
+----------------------------------------
+Inter-quartile Range: 15.2322ms
+----------------------------------------
+Number of Outliers: 1
+Number of Outliers Below Median: 1
+Number of Outliers Above Median: 0
+----------------------------------------
+The data is Negatively Skewed
+========================================
+
+========================================
+Testing Route: Separate Burst for Get All Items by Farmer
+----------------------------------------
+Number of Iterations: 20, Number of Failed Iterations: 0 / 20 (0.0000% failure rate)
+----------------------------------------
+Average Response Time: 520.88917ms,
+Average Response Time without Outliers: 520.88917ms,
+----------------------------------------
+Minimum Time   : 502.4137ms,
+01st Percentile: 507.93335ms,
+05th Percentile: 513.453ms,
+First Quartile : 515.4572ms,
+Median         : 525.3827ms,
+Third Quartile : 525.4325ms,
+95th Percentile: 525.5396ms,
+99th Percentile: 525.5396ms,
+Maximum Time   : 525.5396ms
+----------------------------------------
+Inter-quartile Range: 9.9753ms
+----------------------------------------
+Number of Outliers: 0
+Number of Outliers Below Median: 0
+Number of Outliers Above Median: 0
+----------------------------------------
+The data is Negatively Skewed
+========================================
